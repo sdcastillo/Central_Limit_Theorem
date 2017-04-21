@@ -14,7 +14,7 @@ library(ggplot2)
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Central Limit Theorem"),
+  titlePanel("The Central Limit Theorem"),
   
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
@@ -62,14 +62,20 @@ shinyUI(fluidPage(
                     max = 5,
                     step = NA,
                     width = NULL)
-               
+       
+       
+       
+        
     ),#end sidebarPanel
     
    # Show a plot of the generated distribution
     mainPanel(
-       plotOutput("distPlot")
+       plotOutput("distPlot"),
+       verbatimTextOutput("explanation")
     )
- 
+    
+    
+    
   )
 ))
 

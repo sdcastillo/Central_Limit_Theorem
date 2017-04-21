@@ -6,6 +6,22 @@ library(cowplot)
 
 shinyServer(function(input, output) {
   
+  output$explanation <- renderText({
+    "The Central Limit Theorem (CLT) says that the mean of any sampling distribution from a 
+     population with finite mean and variance approaches a normal distribution, when the 
+     sample size n is sufficiently large.  Intuitively, this means that if you take any random 
+     variable, say from an exponential or Poisson distribution, draw enough independent 
+     samples, and take the average of each of them, then the CLT says that the collection of 
+     all of these averages should be approximately normal.
+
+    Arguements:
+    - Population Size: The size of the population for the family to sample from.
+    - Sample Size: The number of elements to use in calculating each average.
+    - Number of Replications/Samples: The number of averages to take.
+    - Distribution Family: The type of random variable which you are sampling from initially.
+    - Parameters: These define the shape of the previous sample family.
+    "
+  })
   
   output$distPlot <- renderPlot({
     
@@ -110,8 +126,13 @@ shinyServer(function(input, output) {
       grid.arrange(g2, g1, g3, ncol = 2, 
                    layout_matrix = rbind(c(1,1), c(2,3)))
       
-        
+      
+      
   })
+  
+
+  
+  
   
 })
 
