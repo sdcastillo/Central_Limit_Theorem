@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "metadata": {
+    "appmode": "shiny",
+    "entrypoint": null,
+    "primary_rmd": null,
+    "content_category": "interactive",
+    "title": "Central Limit Theorem Explorer",
+    "description": "An interactive Shiny app to visualize the Central Limit Theorem across different population distributions.",
+    "tags": [
+      "statistics",
+      "central limit theorem",
+      "probability",
+      "education",
+      "shiny"
+    ]
+  },
+  "packages": {
+    "r": {
+      "shiny": "*",
+      "ggplot2": "*",
+      "gridExtra": "*"
+    }
+  },
+  "files": [
+    "ui.R",
+    "server.R"
+  ]
+}
