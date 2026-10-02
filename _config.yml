@@ -1,0 +1,14 @@
+# SamWiki skin on GitHub's supported Cayman theme.
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+#
+# This project site uses the remote theme pin. assets/css/style.scss sets the
+# SamWiki color tokens, then imports jekyll-theme-cayman. The main page sets
+# samwiki: true.
+
+title: Central Limit Theorem
+description: Sample means converge in distribution to a Gaussian when the population variance is finite.
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+show_downloads: false
+markdown: kramdown
